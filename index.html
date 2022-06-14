@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo</title>
+    <title>Gomu🎂</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
       <div class="form-container">
-        <h1>Demo</h1>
+        <h1>Happy Birthday Gomu🎂</h1>
 
         <form class="contact-form" method="post">
           <div class="control">
@@ -28,7 +28,7 @@
               id="message"
               cols="30"
               rows="10"
-              placeholder="Message"
+              placeholder="Make Your Wish 🎂"
             ></textarea>
           </div>
 
@@ -45,12 +45,11 @@
       const form = document.querySelector(".contact-form");
       form.addEventListener("submit", function (e) {
         e.preventDefault();
+
         let name = document.querySelector("#name").value;
         let email = document.querySelector("#email").value;
         let message = document.querySelector("#message").value;
-
         document.querySelector(".contact-form").reset();
-
         sendEmail(name, email, message);
       });
       function sendEmail(name, email, message) {
@@ -61,12 +60,10 @@
           To: email,
           From: "kcutsav8084@gmail.com",
           Subject: `Your Wish My Love`,
-          Body: `Name:${name}<br>
-                 Email:${email}<br>
-                 Message:${message}`,
+          Body: `LoveName:${name}<br>
+                 EmailToLove:${email}<br>
+                 YourWish:${message}`,
         });
-        exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
-        exports.build = series(scssTask, jsTask);
       }
     </script>
   </body>
