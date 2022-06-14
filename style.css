@@ -9,8 +9,8 @@ body {
 }
 section {
   position: relative;
-  height: 100vh;
-  background: url(./image.jpg);
+  height: 120vh;
+  background: url(./wow.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@ h1 {
   outline: none;
   outline: none;
   margin: 1em 0;
-  background: transparent;
+  /* background: transparent; */
 }
 .control textarea {
   width: 100%;
@@ -52,7 +52,7 @@ h1 {
 
   outline: none;
   margin: 1em 0;
-  background: transparent;
+  /* background: transparent; */
 }
 .control input[type="submit"] {
   background-color: crimson;
