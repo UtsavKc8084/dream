@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="form-container">
+        <h1>Demo</h1>
+        <form class="contact-form" method="post">
+          <div class="control">
+            <label class="name" for="name">Your Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="control">
+            <label classs="email" for="email">Email Id</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="control">
+            <label class="message" for="message">Message</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="control">
+            <input style="margin-top: 20px" type="submit" value="send" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      const form = document.querySelector(".contact-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let name = document.querySelector("#name").value;
+        let email = document.querySelector("#email").value;
+        let message = document.querySelector("#message").value;
+
+        document.querySelector(".contact-form").reset();
+        sendEmail(name, email, message);
+      });
+      function sendEmail(name, email, message) {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "kcutsav8084@gmail.com",
+          Password: "E0BBAFD8A72DFA80695F35CBD924733EBCD7",
+          To: email,
+          From: "kcutsav8084@gmail.com",
+          Subject: `Your Wish My Love`,
+          Body: `Name:${name}<br>
+                 Email:${email}<br>
+                 Message:${message}`,
+        });
+        exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+        exports.build = series(scssTask, jsTask);
+      }
+    </script>
+  </body>
+</html>
