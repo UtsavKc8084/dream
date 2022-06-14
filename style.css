@@ -37,18 +37,22 @@ h1 {
   display: block;
   padding: 10px;
   color: #222;
-  border: none;
+  border: 1px solid #fff;
+  outline: none;
   outline: none;
   margin: 1em 0;
+  background: transparent;
 }
 .control textarea {
   width: 100%;
   display: block;
   padding: 10px;
   color: #222;
-  border: none;
+  border: 1px solid #fff;
+
   outline: none;
   margin: 1em 0;
+  background: transparent;
 }
 .control input[type="submit"] {
   background-color: crimson;
